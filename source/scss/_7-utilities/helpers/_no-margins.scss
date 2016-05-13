@@ -1,0 +1,53 @@
+/*-- 7. Utilities >> Helpers >> No margins
+========================================================================== --*/
+@if ($use-no-margins) {
+	@mixin generate-no-margin-classes($class) {
+			.#{$class} { @include margin(0); }
+			.#{$class}--top { @include margin(0, top); }
+			.#{$class}--right\ { @include margin(0, right); }
+			.#{$class}--bottom { @include margin(0, bottom); }
+			.#{$class}--left { @include margin(0, left); }
+		}
+		@include generate-no-margin-classes(u-no-margin);
+		
+	@include xs-up {
+		@mixin generate-no-margin-classes-xs-up($class) {
+			.#{$class}\@xs-up { @include margin(0); }
+			.#{$class}--top\@xs-up { @include margin(0, top); }
+			.#{$class}--right\@xs-up { @include margin(0, right); }
+			.#{$class}--bottom\@xs-up { @include margin(0, bottom); }
+			.#{$class}--left\@xs-up { @include margin(0, left); }
+		}
+		@include generate-no-margin-classes-xs-up(u-no-margin);
+	}
+	@include sm-up {
+		@mixin generate-no-margin-classes-sm-up($class) {
+			.#{$class}\@sm-up { @include margin(0); }
+			.#{$class}--top\@sm-up { @include margin(0, top); }
+			.#{$class}--right\@sm-up { @include margin(0, right); }
+			.#{$class}--bottom\@sm-up { @include margin(0, bottom); }
+			.#{$class}--left\@sm-up { @include margin(0, left); }
+		}
+		@include generate-no-margin-classes-sm-up(u-no-margin);
+	}
+	@include md-up {
+		@mixin generate-no-margin-classes-md-up($class) {
+			.#{$class}\@md-up { @include margin(0); }
+			.#{$class}--top\@md-up { @include margin(0, top); }
+			.#{$class}--right\@md-up { @include margin(0, right); }
+			.#{$class}--bottom\@md-up { @include margin(0, bottom); }
+			.#{$class}--left\@md-up { @include margin(0, left); }
+		}
+		@include generate-no-margin-classes-md-up(u-no-margin);
+	}
+	@include lg-up {
+		@mixin generate-no-margin-classes-lg-up($class) {
+			.#{$class}\@lg-up { @include margin(0); }
+			.#{$class}--top\@lg-up { @include margin(0, top); }
+			.#{$class}--right\@lg-up { @include margin(0, right); }
+			.#{$class}--bottom\@lg-up { @include margin(0, bottom); }
+			.#{$class}--left\@lg-up { @include margin(0, left); }
+		}
+		@include generate-no-margin-classes-lg-up(u-no-margin);
+	}
+} //endif

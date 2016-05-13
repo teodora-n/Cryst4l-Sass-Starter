@@ -1,0 +1,19 @@
+/*
+* Margins
+*/
+@mixin margin($margin,  $sides...){
+    @if ($margin != "") {
+        @if ($sides == "") {
+            margin: $margin;
+        } @else {
+            @each $side in $sides {
+               @if ($side == 'top' or
+                    $side == 'right' or
+                    $side == 'bottom' or
+                    $side == 'left') {
+                    margin-#{$side}: $margin;
+                }
+            }
+        }
+    }
+}

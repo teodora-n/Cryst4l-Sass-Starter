@@ -1,0 +1,104 @@
+/*-- 7. Utilities >> Helpers >> Borders
+========================================================================== --*/
+@if ($use-borders) {
+	@mixin generate-borders($class) {
+			.#{$class} { @include border(1px solid $base-border-colour); }
+			.#{$class}--top { @include border(1px solid $base-border-colour, top); }
+			.#{$class}--right\ { @include border(1px solid $base-border-colour, right); }
+			.#{$class}--bottom { @include border(1px solid $base-border-colour, bottom); }
+			.#{$class}--left { @include border(1px solid $base-border-colour, left); }
+		}
+		@include generate-borders(u-border);
+	
+	@include xs-up {
+		@mixin generate-borders-xs-up($class) {
+			.#{$class}\@xs-up { @include border(1px solid $base-border-colour); }
+			.#{$class}--top\@xs-up { @include border(1px solid $base-border-colour, top); }
+			.#{$class}--right\@xs-up { @include border(1px solid $base-border-colour, right); }
+			.#{$class}--bottom\@xs-up { @include border(1px solid $base-border-colour, bottom); }
+			.#{$class}--left\@xs-up { @include border(1px solid $base-border-colour, left); }
+		}
+		@include generate-borders-xs-up(u-border);
+	}
+	@include sm-up {
+		@mixin generate-borders-sm-up($class) {
+			.#{$class}\@sm-up { @include border(1px solid $base-border-colour); }
+			.#{$class}--top\@sm-up { @include border(1px solid $base-border-colour, top); }
+			.#{$class}--right\@sm-up { @include border(1px solid $base-border-colour, right); }
+			.#{$class}--bottom\@sm-up { @include border(1px solid $base-border-colour, bottom); }
+			.#{$class}--left\@sm-up { @include border(1px solid $base-border-colour, left); }
+		}
+		@include generate-borders-sm-up(u-border);
+	}
+	@include md-up {
+		@mixin generate-borders-md-up($class) {
+			.#{$class}\@md-up { @include border(1px solid $base-border-colour); }
+			.#{$class}--top\@md-up { @include border(1px solid $base-border-colour, top); }
+			.#{$class}--right\@md-up { @include border(1px solid $base-border-colour, right); }
+			.#{$class}--bottom\@md-up { @include border(1px solid $base-border-colour, bottom); }
+			.#{$class}--left\@md-up { @include border(1px solid $base-border-colour, left); }
+		}
+		@include generate-borders-md-up(u-border);
+	}
+	@include lg-up {
+		@mixin generate-borders-lg-up($class) {
+			.#{$class}\@lg-up { @include border(1px solid $base-border-colour); }
+			.#{$class}--top\@lg-up { @include border(1px solid $base-border-colour, top); }
+			.#{$class}--right\@lg-up { @include border(1px solid $base-border-colour, right); }
+			.#{$class}--bottom\@lg-up { @include border(1px solid $base-border-colour, bottom); }
+			.#{$class}--left\@lg-up { @include border(1px solid $base-border-colour, left); }
+		}
+		@include generate-borders-lg-up(u-border);
+	}
+	
+	//No borders
+	@mixin generate-no-border-classes($class) {
+			.#{$class} { border:none !important; }
+			.#{$class}--top { border-top:none !important; }
+			.#{$class}--right\ { border-right:none !important; }
+			.#{$class}--bottom { border-bottom:none !important; }
+			.#{$class}--left { border-left:none !important; }
+		}
+		@include generate-no-border-classes(u-no-border);
+		
+	@include xs-up {
+		@mixin generate-no-border-classes-xs-up($class) {
+			.#{$class}\@xs-up { border:none !important; }
+			.#{$class}--top\@xs-up { border-top:none !important; }
+			.#{$class}--right\@xs-up { border-right:none !important; }
+			.#{$class}--bottom\@xs-up { border-bottom:none !important; }
+			.#{$class}--left\@xs-up { border-left:none !important; }
+		}
+		@include generate-no-border-classes-xs-up(u-no-border);
+	}
+	@include sm-up {
+		@mixin generate-no-border-classes-sm-up($class) {
+			.#{$class}\@sm-up { border:none !important; }
+			.#{$class}--top\@sm-up { border-top:none !important; }
+			.#{$class}--right\@sm-up { border-right:none !important; }
+			.#{$class}--bottom\@sm-up { border-bottom:none !important; }
+			.#{$class}--left\@sm-up { border-left:none !important; }
+		}
+		@include generate-no-border-classes-sm-up(u-no-border);
+	}
+	@include md-up {
+		@mixin generate-no-border-classes-md-up($class) {
+			.#{$class}\@md-up { border:none !important; }
+			.#{$class}--top\@md-up { border-top:none !important; }
+			.#{$class}--right\@md-up { border-right:none !important; }
+			.#{$class}--bottom\@md-up { border-bottom:none !important; }
+			.#{$class}--left\@md-up { border-left:none !important; }
+		}
+		@include generate-no-border-classes-md-up(u-no-border);
+	}
+	@include lg-up {
+		@mixin generate-no-border-classes-lg-up($class) {
+			.#{$class}\@lg-up { border:none !important; }
+			.#{$class}--top\@lg-up { border-top:none !important; }
+			.#{$class}--right\@lg-up { border-right:none !important; }
+			.#{$class}--bottom\@lg-up { border-bottom:none !important; }
+			.#{$class}--left\@lg-up { border-left:none !important; }
+		}
+		@include generate-no-border-classes-lg-up(u-no-border);
+	}
+} //endif

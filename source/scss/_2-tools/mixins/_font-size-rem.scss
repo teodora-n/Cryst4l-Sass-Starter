@@ -1,0 +1,8 @@
+/*
+* Font size REM
+* Pixel fallback
+*/
+@mixin font-size-rem($size) {
+	font-size: $size;
+	font-size: calculateRem($size);
+}

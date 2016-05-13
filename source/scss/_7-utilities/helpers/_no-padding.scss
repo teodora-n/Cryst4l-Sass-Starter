@@ -1,0 +1,53 @@
+/*-- 7. Utilities >> Helpers >> No padding
+========================================================================== --*/
+@if ($use-no-paddings) {
+	@mixin generate-no-pad-classes($class) {
+			.#{$class} { @include padding(0); }
+			.#{$class}--top { @include padding(0, top); }
+			.#{$class}--right\ { @include padding(0, right); }
+			.#{$class}--bottom { @include padding(0, bottom); }
+			.#{$class}--left { @include padding(0, left); }
+		}
+		@include generate-no-pad-classes(u-no-pad);
+		
+	@include xs-up {
+		@mixin generate-no-pad-classes-xs-up($class) {
+			.#{$class}\@xs-up { @include padding(0); }
+			.#{$class}--top\@xs-up { @include padding(0, top); }
+			.#{$class}--right\@xs-up { @include padding(0, right); }
+			.#{$class}--bottom\@xs-up { @include padding(0, bottom); }
+			.#{$class}--left\@xs-up { @include padding(0, left); }
+		}
+		@include generate-no-pad-classes-xs-up(u-no-pad);
+	}
+	@include sm-up {
+		@mixin generate-no-pad-classes-sm-up($class) {
+			.#{$class}\@sm-up { @include padding(0); }
+			.#{$class}--top\@sm-up { @include padding(0, top); }
+			.#{$class}--right\@sm-up { @include padding(0, right); }
+			.#{$class}--bottom\@sm-up { @include padding(0, bottom); }
+			.#{$class}--left\@sm-up { @include padding(0, left); }
+		}
+		@include generate-no-pad-classes-sm-up(u-no-pad);
+	}
+	@include md-up {
+		@mixin generate-no-pad-classes-md-up($class) {
+			.#{$class}\@md-up { @include padding(0); }
+			.#{$class}--top\@md-up { @include padding(0, top); }
+			.#{$class}--right\@md-up { @include padding(0, right); }
+			.#{$class}--bottom\@md-up { @include padding(0, bottom); }
+			.#{$class}--left\@md-up { @include padding(0, left); }
+		}
+		@include generate-no-pad-classes-md-up(u-no-pad);
+	}
+	@include lg-up {
+		@mixin generate-no-pad-classes-lg-up($class) {
+			.#{$class}\@lg-up { @include padding(0); }
+			.#{$class}--top\@lg-up { @include padding(0, top); }
+			.#{$class}--right\@lg-up { @include padding(0, right); }
+			.#{$class}--bottom\@lg-up { @include padding(0, bottom); }
+			.#{$class}--left\@lg-up { @include padding(0, left); }
+		}
+		@include generate-no-pad-classes-lg-up(u-no-pad);
+	}
+} //endif

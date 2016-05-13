@@ -1,0 +1,19 @@
+/*
+* Border
+*/
+@mixin border($style,  $sides...){
+    @if ($style != "") {
+        @if ($sides == "") {
+            border: $style;
+        } @else {
+            @each $side in $sides {
+               @if ($side == 'top' or
+                    $side == 'right' or
+                    $side == 'bottom' or
+                    $side == 'left') {
+                    border-#{$side}: $style;
+                }
+            }
+        }
+    }
+}

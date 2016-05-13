@@ -1,0 +1,39 @@
+/*-- 4. Base >> Typography
+========================================================================== --*/
+h1, h2, h3, h4, h5, h6{
+	font-family: $secondary-font;
+	font-weight:normal;
+}
+h1{
+	font-size:calculateRem($text-xxl);
+}
+h2{
+	font-size:calculateRem($text-xl);
+}
+h3{
+	font-size:calculateRem($text-md);
+}
+h4{
+	font-size:calculateRem($text-sm);
+}
+h5{
+	font-size:calculateRem($text-xs);
+}
+h6{
+	font-size:calculateRem($text-xt);
+}
+p{
+}
+small{
+}
+strong, b{
+}
+em, i{
+}
+sub, sup{
+}
+blockquote{
+}
+ul, li{
+	@include list-styles();
+}

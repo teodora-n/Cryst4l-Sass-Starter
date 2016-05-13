@@ -1,0 +1,7 @@
+/*
+* Font size REM
+*/
+@mixin font-size-em($size) {
+	font-size: $size;
+	font-size: calculateEm($size);
+}

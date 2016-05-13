@@ -1,0 +1,19 @@
+/*
+* Paddings
+*/
+@mixin padding($padding,  $sides...){
+    @if ($padding != "") {
+        @if ($sides == "") {
+            padding: $padding;
+        } @else {
+            @each $side in $sides {
+               @if ($side == 'top' or
+                    $side == 'right' or
+                    $side == 'bottom' or
+                    $side == 'left') {
+                    padding-#{$side}: $padding;
+                }
+            }
+        }
+    }
+}

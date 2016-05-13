@@ -1,0 +1,101 @@
+/*-- 1. Settings >> Variables
+========================================================================== --*/
+
+/*
+* Colours
+*/
+$primary-colour: #d52c38;
+$secondary-colour: #2d7ab5;
+$dark: #1e252c;
+$light: #f5f5f5;
+
+/*
+* Base colours
+*/
+$base-border-colour: #d7d7d7;
+$base-link-colour: $primary-colour;
+$base-text-colour: $dark;
+
+
+/*
+* Font size
+*/
+$text-xxl:55px;
+$text-xl: 40px;
+$text-lg: 30px;
+$text-md: 20px;
+$text-sm: 16px;
+$text-xs: 14px;
+$text-xt: 12px;
+
+$base-font-size: $text-sm; 
+
+/*
+* Fonts
+*/
+$primary-font: sans-serif;
+$secondary-font: serif;
+
+/*
+* Line height
+*/
+$base-line-height:1.5;
+
+/*
+* Fixed widths
+* Used for max widths with wrapping classes 
+*/
+$width-lg: 1200px;
+$width-md: 980px;
+$width-sm: 768px;
+$width-sl: 640px;
+$width-xs: 480px;
+$width-xt: 320px;
+
+$site-wrap-width: $width-lg;
+
+/*
+* Spacing unit
+*/
+$spacing-unit: ($base-line-height * 1rem); 
+$half-spacing-unit: ($spacing-unit / 2);
+
+/*
+* Widths
+*/
+$lg: 1200px;
+$md: 980px;
+$sm: 768px;
+$sl: 640px;
+$xs: 480px;
+$xt: 320px;
+
+/**
+ * Media query breakpoints.
+ * You can choose how many, the namespace and breakpoint value.
+ * Example width class with default values: Note the `@`symbol prepends
+ * the namespace.
+ *
+ `u-1/2@sm-up u-2/5@lg-up`
+ *
+ * 1. Namespace for the breakpoint.
+ * 2. Value for the breakpoint.
+ * You can comment out or remove breakpoints from the list to reduce
+ * bloat from the stylesheet, or add additional breakpoints.
+ *
+ */
+$grid-breakpoints: (
+    /* [1]       [2] */
+    ( xt-up,    $xt ),
+    ( xs-up,    $xs ),
+    ( sl-up,    $sl ),
+    ( sm-up,    $sm ),
+    ( md-up,    $md ),
+    ( lg-up,    $lg ),
+) !default;
+
+
+/*
+* Misc
+*/
+//Any other variables go here

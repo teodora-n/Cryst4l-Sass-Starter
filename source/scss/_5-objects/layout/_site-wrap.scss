@@ -1,0 +1,7 @@
+/*-- 5. Objects >> Site wrap
+========================================================================== --*/
+.o-site-wrap{
+	@include max-width(100%);
+	@include max-width(100vw);
+	overflow-x:hidden;
+}

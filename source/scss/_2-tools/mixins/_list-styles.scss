@@ -1,0 +1,8 @@
+/*
+* List styles
+*/
+@mixin list-styles($list-style:outside none none, $padding:0, $margin:0) {
+    list-style:$list-style; 
+    padding:$padding;
+    margin:$margin;
+}

@@ -1,0 +1,13 @@
+/*-- 5. Objects >> Section
+========================================================================== --*/
+.o-section{
+	@include padding($spacing-unit * 5, top);
+	@include padding($spacing-unit * 5, bottom);
+	
+	*:first-child{
+		margin-top: 0;
+	}
+	*:last-child{
+		margin-bottom: 0;
+	}
+}

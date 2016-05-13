@@ -1,0 +1,35 @@
+/**
+ * Line height normalizer that fixes excessive line-height on larger font-sizes
+ *
+ * Written by Robert Smith
+ *
+ * The general formula or line-height = `$initial-line-height` / font-size
+ * does not work when the font-size exceeds the pixel size of the
+ * `$initial-line-height`.
+ * This mixin handles that problem for us, it also enforces limits - 
+ * We never want a line-height greater than our `$line-height-ratio` and
+ * line-heights below 1.25 start to look a little cramped.
+ */
+@mixin line-height($font-size, $important: null) {
+    $size: nth($font-size,1);
+    $line-height: ceil(($size) / $initial-line-height) * ($initial-line-height / $size);
+    @if $line-height < 1.25 {
+    	@if $important {
+    		line-height: 1.25 !important;
+    	} @else {
+        	line-height: 1.25;    		
+    	}
+    } @elseif $line-height > $base-line-height {
+    	@if $important {
+    		line-height: $base-line-height + !important;	
+    	} @else {
+        	line-height: $base-line-height;
+    	}
+    } @else {
+    	@if $important {
+        	line-height: $line-height + !important;
+    	} @else {
+    		line-height: $line-height;
+    	}
+    }
+}

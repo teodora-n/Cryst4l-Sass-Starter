@@ -1,0 +1,8 @@
+/*
+* Background size 
+*/
+@mixin background-size($size:cover, $position:top center, $repeat:no-repeat){
+	background-size:$size;
+	background-position:$position;
+	background-repeat:$repeat;
+}

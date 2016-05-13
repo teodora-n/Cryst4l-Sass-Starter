@@ -1,0 +1,6 @@
+/*
+* Box sizing
+*/
+@mixin box-sizing($box-sizing:border-box){
+	box-sizing: $box-sizing;
+}

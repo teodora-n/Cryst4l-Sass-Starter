@@ -1,0 +1,7 @@
+/*
+* Center horizontally
+*/
+@mixin center-horizontally($margin-top:0, $margin-bottom:0){	
+	display: block;
+	margin: $margin-top auto $margin-bottom auto;
+}

@@ -1,0 +1,11 @@
+/*
+* Convert pixels to rems
+*/
+@function calculateRem($pixels) {
+  @if (unitless($pixels)) {
+    $pixels: $pixels * 1px;
+  }
+  
+  $remSize: $pixels / $base-font-size;
+  @return $remSize * 1rem;
+}
