@@ -1,0 +1,8 @@
+/*
+* CSS triangles
+*/
+@mixin arrowDown($borderWidth, $borderColour){
+    border-left: $borderWidth solid transparent;
+    border-right: $borderWidth solid transparent;
+    border-top: $borderWidth solid $borderColour;
+}

@@ -1,2 +1,58 @@
 /*-- 4. Base >> Form elements
 ========================================================================== --*/
+label{
+    display:block;
+}
+@mixin placeholder {
+    &::-webkit-input-placeholder {
+        @content;
+    }
+
+    &:-moz-placeholder { /* Firefox 18- */
+        @content;
+    }
+
+    &::-moz-placeholder {  /* Firefox 19+ */
+        @content;
+    }
+
+    &:-ms-input-placeholder {
+        @content;
+    }
+}
+
+@mixin default-form-el-styles{
+	background:none;
+	padding:0.5em 1em;
+	font-family: $primary-font;
+	border:1px solid $base-border-colour;
+	outline:none;
+	box-shadow:none;
+	-webkit-appearance:none;
+    -moz-appearance: none;
+	-webkit-border-radius:0;
+	@include box-sizing();
+    @include transition(all, 0.3s);
+}
+
+input[type="text"], input[type="password"], input[type="email"], input[type="search"], input[type="url"], input[type="tel"], input[type="number"], input[type="date"], 
+input[type="file"], select{
+	@include default-form-el-styles;
+	width:100%;
+	color:$dark;
+
+    &:focus{
+        border-color: $dark;
+    }
+}
+input[type="submit"], input[type="button"], button{
+	outline:none;
+	border:none;
+	font-family:$primary-font;
+	font-weight:700;
+    @include transition(all, 0.3s);
+    -webkit-appearance:none;
+}
+textarea{
+    max-width: 100%;
+}

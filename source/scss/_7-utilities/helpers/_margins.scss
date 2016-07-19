@@ -1,0 +1,72 @@
+/*-- 7. Utilities >> Helpers >> margin
+========================================================================== --*/
+@mixin generate-margin-classes($class) {
+    .#{$class} { @include margin($spacing-unit); }
+    .#{$class}--top { @include margin($spacing-unit, top); }
+    .#{$class}--right { @include margin($spacing-unit, right); }
+    .#{$class}--bottom { @include margin($spacing-unit, bottom); }
+    .#{$class}--left { @include margin($spacing-unit, left); }
+}
+@mixin generate-margin-classes-xt-up($class) {
+    .#{$class}\@xt-up { @include margin($spacing-unit); }
+    .#{$class}--top\@xt-up { @include margin($spacing-unit, top); }
+    .#{$class}--right\@xt-up { @include margin($spacing-unit, right); }
+    .#{$class}--bottom\@xt-up { @include margin($spacing-unit, bottom); }
+    .#{$class}--left\@xt-up { @include margin($spacing-unit, left); }
+}
+@mixin generate-margin-classes-xs-up($class) {
+    .#{$class}\@xs-up { @include margin($spacing-unit); }
+    .#{$class}--top\@xs-up { @include margin($spacing-unit, top); }
+    .#{$class}--right\@xs-up { @include margin($spacing-unit, right); }
+    .#{$class}--bottom\@xs-up { @include margin($spacing-unit, bottom); }
+    .#{$class}--left\@xs-up { @include margin($spacing-unit, left); }
+}
+@mixin generate-margin-classes-sm-up($class) {
+    .#{$class}\@sm-up { @include margin($spacing-unit); }
+    .#{$class}--top\@sm-up { @include margin($spacing-unit, top); }
+    .#{$class}--right\@sm-up { @include margin($spacing-unit, right); }
+    .#{$class}--bottom\@sm-up { @include margin($spacing-unit, bottom); }
+    .#{$class}--left\@sm-up { @include margin($spacing-unit, left); }
+}
+@mixin generate-margin-classes-sl-up($class) {
+    .#{$class}\@sl-up { @include margin($spacing-unit); }
+    .#{$class}--top\@sl-up { @include margin($spacing-unit, top); }
+    .#{$class}--right\@sl-up { @include margin($spacing-unit, right); }
+    .#{$class}--bottom\@sl-up { @include margin($spacing-unit, bottom); }
+    .#{$class}--left\@sl-up { @include margin($spacing-unit, left); }
+}
+@mixin generate-margin-classes-md-up($class) {
+    .#{$class}\@md-up { @include margin($spacing-unit); }
+    .#{$class}--top\@md-up { @include margin($spacing-unit, top); }
+    .#{$class}--right\@md-up { @include margin($spacing-unit, right); }
+    .#{$class}--bottom\@md-up { @include margin($spacing-unit, bottom); }
+    .#{$class}--left\@md-up { @include margin($spacing-unit, left); }
+}
+@mixin generate-margin-classes-lg-up($class) {
+    .#{$class}\@lg-up { @include margin($spacing-unit); }
+    .#{$class}--top\@lg-up { @include margin($spacing-unit, top); }
+    .#{$class}--right\@lg-up { @include margin($spacing-unit, right); }
+    .#{$class}--bottom\@lg-up { @include margin($spacing-unit, bottom); }
+    .#{$class}--left\@lg-up { @include margin($spacing-unit, left); }
+}
+@if ($use-margins) {
+	@include generate-margin-classes(u-margin);
+    @include xt-up {
+		@include generate-margin-classes-xt-up(u-margin);
+	}
+	@include xs-up {
+		@include generate-margin-classes-xs-up(u-margin);
+	}
+	@include sm-up {
+		@include generate-margin-classes-sm-up(u-margin);
+	}
+    @include sl-up {
+		@include generate-margin-classes-sl-up(u-margin);
+	}
+	@include md-up {
+		@include generate-margin-classes-md-up(u-margin);
+	}
+	@include lg-up {
+		@include generate-margin-classes-lg-up(u-margin);
+	}
+} //endif

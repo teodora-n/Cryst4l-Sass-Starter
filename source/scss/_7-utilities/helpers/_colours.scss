@@ -1,0 +1,19 @@
+/*-- 7. Utilities >> Helpers >> Colours
+========================================================================== --*/
+@if ($use-colours) {
+	.u-primary-colour{
+        color: $primary-colour;
+    }
+    .u-secondary-colour{
+        color: $secondary-colour;
+    }
+    .u-dark{
+        color: $dark;
+    }
+    .u-light{
+        color: $light;
+    }
+    .u-white{
+        color: #fff;
+    }
+} //endif

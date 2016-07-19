@@ -2,10 +2,17 @@
 ========================================================================== --*/
 $use-wrapping-classes: true !default;
 $use-borders: true !default;
+$use-paddings: true !default;
 $use-no-paddings: true !default;
+$use-margins: true !default;
 $use-no-margins: true !default;
+$use-colours: true !default;
+$use-background-colours: true !default;
+$use-typography: true !default;
+$use-buttons: true !default;
+$use-animations: true !default;
 
-$use-grid:               true !default;
+$use-grid: true !default;
 
 /** GRID FLAGS */
 $use-grid--equal-height: true !default;

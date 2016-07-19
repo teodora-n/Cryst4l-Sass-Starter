@@ -1,0 +1,80 @@
+/*-- 7. Utilities >> Helpers >> Padding
+========================================================================== --*/
+@mixin generate-pad-classes($class) {
+    .#{$class}--top { @include padding($spacing-unit, top); }
+    .#{$class}--right { @include padding($spacing-unit, right); }
+    .#{$class}--bottom { @include padding($spacing-unit, bottom); }
+    .#{$class}--left { @include padding($spacing-unit, left); }
+    .#{$class}--1\/12-top{ @include padding(8.33333%, top); }
+    .#{$class}--1\/12-right{ @include padding(8.33333%, right); }
+    .#{$class}--1\/12-bottom{ @include padding(8.33333%, bottom); }
+    .#{$class}--1\/12-left{ @include padding(8.33333%, left); }
+    .#{$class}--2\/12-top{ @include padding(16.66667%, top); }
+    .#{$class}--2\/12-right{ @include padding(16.66667%, right); }
+    .#{$class}--2\/12-bottom{ @include padding(16.66667%, bottom); }
+    .#{$class}--2\/12-left{ @include padding(16.66667%, left); }
+}
+@mixin generate-pad-classes-xt-up($class) {
+    .#{$class}\@xt-up { @include padding($spacing-unit); }
+    .#{$class}--top\@xt-up { @include padding($spacing-unit, top); }
+    .#{$class}--right\@xt-up { @include padding($spacing-unit, right); }
+    .#{$class}--bottom\@xt-up { @include padding($spacing-unit, bottom); }
+    .#{$class}--left\@xt-up { @include padding($spacing-unit, left); }
+}
+@mixin generate-pad-classes-xs-up($class) {
+    .#{$class}\@xs-up { @include padding($spacing-unit); }
+    .#{$class}--top\@xs-up { @include padding($spacing-unit, top); }
+    .#{$class}--right\@xs-up { @include padding($spacing-unit, right); }
+    .#{$class}--bottom\@xs-up { @include padding($spacing-unit, bottom); }
+    .#{$class}--left\@xs-up { @include padding($spacing-unit, left); }
+}
+@mixin generate-pad-classes-sm-up($class) {
+    .#{$class}\@sm-up { @include padding($spacing-unit); }
+    .#{$class}--top\@sm-up { @include padding($spacing-unit, top); }
+    .#{$class}--right\@sm-up { @include padding($spacing-unit, right); }
+    .#{$class}--bottom\@sm-up { @include padding($spacing-unit, bottom); }
+    .#{$class}--left\@sm-up { @include padding($spacing-unit, left); }
+}
+@mixin generate-pad-classes-sl-up($class) {
+    .#{$class}\@sl-up { @include padding($spacing-unit); }
+    .#{$class}--top\@sl-up { @include padding($spacing-unit, top); }
+    .#{$class}--right\@sl-up { @include padding($spacing-unit, right); }
+    .#{$class}--bottom\@sl-up { @include padding($spacing-unit, bottom); }
+    .#{$class}--left\@sl-up { @include padding($spacing-unit, left); }
+}
+@mixin generate-pad-classes-md-up($class) {
+    .#{$class}\@md-up { @include padding($spacing-unit); }
+    .#{$class}--top\@md-up { @include padding($spacing-unit, top); }
+    .#{$class}--right\@md-up { @include padding($spacing-unit, right); }
+    .#{$class}--bottom\@md-up { @include padding($spacing-unit, bottom); }
+    .#{$class}--left\@md-up { @include padding($spacing-unit, left); }
+}
+@mixin generate-pad-classes-lg-up($class) {
+    .#{$class}\@lg-up { @include padding($spacing-unit); }
+    .#{$class}--top\@lg-up { @include padding($spacing-unit, top); }
+    .#{$class}--right\@lg-up { @include padding($spacing-unit, right); }
+    .#{$class}--bottom\@lg-up { @include padding($spacing-unit, bottom); }
+    .#{$class}--left\@lg-up { @include padding($spacing-unit, left); }
+}
+@if ($use-paddings) {
+	.u-pad{ @include padding($spacing-unit, top, right, bottom, left); }
+    @include generate-pad-classes(u-pad);
+    @include xt-up {
+		@include generate-pad-classes-xt-up(u-pad);
+	}
+	@include xs-up {
+		@include generate-pad-classes-xs-up(u-pad);
+	}
+	@include sm-up {
+		@include generate-pad-classes-sm-up(u-pad);
+	}
+    @include sl-up {
+		@include generate-pad-classes-sl-up(u-pad);
+	}
+	@include md-up {
+		@include generate-pad-classes-md-up(u-pad);
+	}
+	@include lg-up {
+		@include generate-pad-classes-lg-up(u-pad);
+	}
+} //endif

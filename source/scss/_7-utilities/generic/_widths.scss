@@ -169,3 +169,7 @@ $pull-fractions: (
     (u-pull-11\/12,    11/12,    $use-pull-11-12),
 );
 @include make-offsets(right, $pull-fractions);
+
+.u-width--100{
+    width:100%;
+}

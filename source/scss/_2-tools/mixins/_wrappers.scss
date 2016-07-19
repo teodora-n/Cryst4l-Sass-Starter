@@ -8,7 +8,7 @@
     .#{$class}--max-lg { @include max-width($lg); }
 	.#{$class}--max-md { @include max-width($md); }
     .#{$class}--max-sm { @include max-width($sm); }
-    .#{$class}--max-sl { @include max-width($sl); }
+    .#{$class}--max-sl { @include max-width($sl); } 
 	.#{$class}--max-xs { @include max-width($xs); }
 	.#{$class}--max-xt { @include max-width($xt); }
 }

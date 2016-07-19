@@ -2,7 +2,7 @@
 * Display 
 * Visibility
 */
-@mixin display-visiblity($display: null, $visibility: null) {
+@mixin display-visibility($display: null, $visibility: null) {
     display:$display;
 	visibility: $visibility;
 }

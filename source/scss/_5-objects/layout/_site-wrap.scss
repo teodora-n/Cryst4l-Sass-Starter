@@ -4,4 +4,15 @@
 	@include max-width(100%);
 	@include max-width(100vw);
 	overflow-x:hidden;
+
+	//Hide everything until all css and js load
+	opacity:0;
+	background-color: #fff;
+	.no-js &{
+		opacity:1;
+	}
+
+	&.loaded{
+		opacity:1;
+	}
 }

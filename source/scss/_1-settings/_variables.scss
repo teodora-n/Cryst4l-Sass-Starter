@@ -4,9 +4,9 @@
 /*
 * Colours
 */
-$primary-colour: #d52c38;
-$secondary-colour: #2d7ab5;
-$dark: #1e252c;
+$primary-colour: #2e71f0;
+$secondary-colour: #f9bd34;
+$dark: #293446;
 $light: #f5f5f5;
 
 /*
@@ -20,32 +20,32 @@ $base-text-colour: $dark;
 /*
 * Font size
 */
-$text-xxl:55px;
-$text-xl: 40px;
-$text-lg: 30px;
-$text-md: 20px;
+$text-xxl:60px;
+$text-xl: 48px;
+$text-lg: 21px;
+$text-md: 18px;
 $text-sm: 16px;
 $text-xs: 14px;
-$text-xt: 12px;
+$text-xt: 13px;
 
 $base-font-size: $text-sm; 
 
 /*
 * Fonts
 */
-$primary-font: sans-serif;
-$secondary-font: serif;
+$primary-font: 'texgyreherosregular', sans-serif;
+$secondary-font: 'soleil',sans-serif;
 
 /*
 * Line height
 */
-$base-line-height:1.5;
+$base-line-height:1.6;
 
 /*
 * Fixed widths
 * Used for max widths with wrapping classes 
 */
-$width-lg: 1200px;
+$width-lg: 1170px;
 $width-md: 980px;
 $width-sm: 768px;
 $width-sl: 640px;
@@ -63,12 +63,12 @@ $half-spacing-unit: ($spacing-unit / 2);
 /*
 * Widths
 */
-$lg: 1200px;
-$md: 980px;
-$sm: 768px;
-$sl: 640px;
-$xs: 480px;
-$xt: 320px;
+$lg: $width-lg;
+$md: $width-md;
+$sm: $width-sm;
+$sl: $width-sl;
+$xs: $width-xs;
+$xt: $width-xt;
 
 /**
  * Media query breakpoints.

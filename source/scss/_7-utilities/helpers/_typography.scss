@@ -1,0 +1,180 @@
+/*-- 7. Utilities >> Helpers >> Typoraphy
+========================================================================== --*/
+@mixin generate-text-classes-xt-up($class) {
+    .#{$class}--xxl\@xt-up { font-size: $text-xxl; }
+    .#{$class}--xl\@xt-up { font-size: $text-xl; }
+    .#{$class}--lg\@xt-up { font-size: $text-lg; }
+    .#{$class}--md\@xt-up { font-size: $text-md; }
+    .#{$class}--sm\@xt-up { font-size: $text-sm; }
+    .#{$class}--xs\@xt-up { font-size: $text-xs; }
+    .#{$class}--xt\@xt-up { font-size: $text-xt; }
+	.#{$class}--left\@xt-up { text-align:left; }
+	.#{$class}--right\@xt-up { text-align: right; }
+	.#{$class}--center\@xt-up { text-align:center; }
+    .#{$class}--uppercase\@xt-up { text-transform: uppercase; }
+}
+@mixin generate-text-classes-xs-up($class) {
+    .#{$class}--xxl\@xs-up { font-size: $text-xxl; }
+    .#{$class}--xl\@xs-up { font-size: $text-xl; }
+    .#{$class}--lg\@xs-up { font-size: $text-lg; }
+    .#{$class}--md\@xs-up { font-size: $text-md; }
+    .#{$class}--sm\@xs-up { font-size: $text-sm; }
+    .#{$class}--xs\@xs-up { font-size: $text-xs; }
+    .#{$class}--xt\@xs-up { font-size: $text-xt; }
+	.#{$class}--left\@xs-up { text-align:left; }
+	.#{$class}--right\@xs-up { text-align: right; }
+	.#{$class}--center\@xs-up { text-align:center; }
+    .#{$class}--uppercase\@xs-up { text-transform: uppercase; }
+}
+@mixin generate-text-classes-sm-up($class) {
+    .#{$class}--xxl\@sm-up { font-size: $text-xxl; }
+    .#{$class}--xl\@sm-up { font-size: $text-xl; }
+    .#{$class}--lg\@sm-up { font-size: $text-lg; }
+    .#{$class}--md\@sm-up { font-size: $text-md; }
+    .#{$class}--sm\@sm-up { font-size: $text-sm; }
+    .#{$class}--xs\@sm-up { font-size: $text-xs; }
+    .#{$class}--xt\@sm-up { font-size: $text-xt; }
+	.#{$class}--left\@sm-up { text-align:left; }
+	.#{$class}--right\@sm-up { text-align: right; }
+	.#{$class}--center\@sm-up { text-align:center; }
+    .#{$class}--uppercase\@sm-up { text-transform: uppercase; }
+}
+@mixin generate-text-classes-sl-up($class) {
+    .#{$class}--xxl\@sl-up { font-size: $text-xxl; }
+    .#{$class}--xl\@sl-up { font-size: $text-xl; }
+    .#{$class}--lg\@sl-up { font-size: $text-lg; }
+    .#{$class}--md\@sl-up { font-size: $text-md; }
+    .#{$class}--sm\@sl-up { font-size: $text-sm; }
+    .#{$class}--xs\@sl-up { font-size: $text-xs; }
+    .#{$class}--xt\@sl-up { font-size: $text-xt; }
+	.#{$class}--left\@sl-up { text-align:left; }
+	.#{$class}--right\@sl-up { text-align: right; }
+	.#{$class}--center\@sl-up { text-align:center; }
+    .#{$class}--uppercase\@sl-up { text-transform: uppercase; }
+}
+@mixin generate-text-classes-md-up($class) {
+    .#{$class}--xxl\@md-up { font-size: $text-xxl; }
+    .#{$class}--xl\@md-up { font-size: $text-xl; }
+    .#{$class}--lg\@md-up { font-size: $text-lg; }
+    .#{$class}--md\@md-up { font-size: $text-md; }
+    .#{$class}--sm\@md-up { font-size: $text-sm; }
+    .#{$class}--xs\@md-up { font-size: $text-xs; }
+    .#{$class}--xt\@md-up { font-size: $text-xt; }
+	.#{$class}--left\@md-up { text-align:left; }
+	.#{$class}--right\@md-up { text-align: right; }
+	.#{$class}--center\@md-up { text-align:center; }
+    .#{$class}--uppercase\@md-up { text-transform: uppercase; }
+}
+@mixin generate-text-classes-lg-up($class) {
+    .#{$class}--xxl\@lg-up { font-size: $text-xxl; }
+    .#{$class}--xl\@lg-up { font-size: $text-xl; }
+    .#{$class}--lg\@lg-up { font-size: $text-lg; }
+    .#{$class}--md\@lg-up { font-size: $text-md; }
+    .#{$class}--sm\@lg-up { font-size: $text-sm; }
+    .#{$class}--xs\@lg-up { font-size: $text-xs; }
+    .#{$class}--xt\@lg-up { font-size: $text-xt; }
+	.#{$class}--left\@lg-up { text-align:left; }
+	.#{$class}--right\@lg-up { text-align: right; }
+	.#{$class}--center\@lg-up { text-align: center; }
+    .#{$class}--uppercase\@lg-up { text-transform: uppercase; }
+}
+@if ($use-typography) {
+    .u-primary-font{
+        font-family: $primary-font;
+    }
+    .u-secondary-font{
+        font-family: $secondary-font;
+    }
+	.u-text-xxl{
+        font-size: $text-xxl;
+        line-height: 1.2;
+    }
+    .u-text-xl{
+        font-size: $text-xl;
+    }
+    .u-text-lg{
+        font-size: $text-lg;
+    }
+    .u-text-md{
+        font-size: $text-md;
+    }
+    .u-text-sm{
+        font-size: $text-sm;
+    }
+    .u-text-xs{
+        font-size: $text-xs;
+    }
+    .u-text-xt{
+        font-size: $text-xt;
+    }
+    .u-text-left{
+        text-align: left;
+    }
+    .u-text-right{
+        text-align: right;
+    }
+    .u-text-center{
+        text-align: center;
+    }
+    .u-text-uppercase{
+        text-transform: uppercase;
+    }
+    .u-text-bold{
+        font-weight: 700;
+    }
+    .u-text-regular{
+        font-weight: 400;
+    }
+    .u-text-italic{
+        font-style: italic;
+    }
+
+    .u-bullet-list{
+        li{
+            position: relative;
+            padding: calculateRem(15px) calculateRem(0) calculateRem(15px) calculateRem(25px);
+            border-bottom: 1px solid $base-border-colour;
+
+            &:before{
+                content:'';
+                @include position(absolute, calculateRem(22px), auto, auto, 0);
+                display:block;
+                width:9px;
+                height:9px;
+                @include border-radius(50%);
+                border: 2px solid $dark;
+            }
+        }
+
+        &--primary-colour li:before{
+            border-color: $primary-colour;
+        }
+
+        &--secondary-colour li:before{
+            border-color: $secondary-colour;
+        }
+
+        &--white li:before{
+            border-color: #fff;
+        }
+    }
+    
+    @include xt-up {
+		@include generate-text-classes-xt-up(u-text);
+	}
+    @include xs-up {
+		@include generate-text-classes-xs-up(u-text);
+	}
+    @include sm-up {
+		@include generate-text-classes-sm-up(u-text);
+	}
+    @include sl-up {
+		@include generate-text-classes-sl-up(u-text);
+	}
+    @include md-up {
+		@include generate-text-classes-md-up(u-text);
+	}
+    @include lg-up {
+		@include generate-text-classes-lg-up(u-text);
+	}
+} //endif

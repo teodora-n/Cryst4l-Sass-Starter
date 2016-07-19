@@ -1,14 +1,14 @@
 /**
- * xxs
+ * xt
  */
  
-@mixin xxs-up {
-    @media screen and ( min-width: calculateEm($xxs+1)) {
+@mixin xt-up {
+    @media screen and ( min-width: calculateEm($xt+1)) {
         @content;
     }
 }
-@mixin xxs-down {
-    @media screen and ( max-width: calculateEm($xxs)) {
+@mixin xt-down {
+    @media screen and ( max-width: calculateEm($xt)) {
         @content;
     }
 }
@@ -41,6 +41,21 @@
 }
 @mixin sm-down {
 	@media screen and ( max-width: calculateEm($sm)) {
+		@content;
+	}
+}
+
+/**
+ * sl
+ */
+
+@mixin sl-up {
+	@media screen and ( min-width: calculateEm($sl+1)) {
+		@content;
+	}
+}
+@mixin sl-down {
+	@media screen and ( max-width: calculateEm($sl)) {
 		@content;
 	}
 }

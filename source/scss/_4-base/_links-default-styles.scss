@@ -1,15 +1,24 @@
 /*-- 4. Base >> Default link styles
 ========================================================================== --*/
 a {
-    color: $primary-colour;
+    color: $secondary-colour;
 	@include transition(all 0.3s);
 	text-decoration:none;
     &:hover,
     &:focus {
-        color: $secondary-colour;
         outline: none;
     }
     &:active {
         outline: none;
+    }
+    &.u-secondary-colour{
+        &:hover{
+            color: $primary-colour;
+        }
+    }
+    &.u-primary-colour{
+        &:hover{
+            color: $secondary-colour;
+        }
     }
 }

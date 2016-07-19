@@ -5,6 +5,7 @@
 	text-rendering: optimizeLegibility;
 	@include box-sizing;
 	-webkit-overflow-scrolling:touch;
+	-webkit-backface-visibility: hidden;
 }
 html {
     min-height:100%;        
@@ -14,6 +15,8 @@ html {
 }
 body {
     font-size: $base-font-size;
+	font-weight: 400;
+	background-color: $primary-colour;
     color: $base-text-colour;
     line-height: $base-line-height;
     font-family: $primary-font;

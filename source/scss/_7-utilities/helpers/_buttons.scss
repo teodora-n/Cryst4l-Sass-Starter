@@ -1,0 +1,79 @@
+/*-- 7. Utilities >> Helpers >> Typoraphy
+========================================================================== --*/
+@if ($use-buttons) {
+	.u-button{
+        display:inline-block;
+        padding:0.7em 2em;
+        @include border-radius(3px);
+        border:1px solid transparent;
+        font-family: $secondary-font;
+        text-transform:uppercase;
+        letter-spacing: 1px;
+
+        /*
+        * Solid buttons
+        */
+        &--solid-primary{
+            background-color: $primary-colour;
+            border-color: $primary-colour;
+            color: #fff;
+
+            &:hover{
+                background:none;
+                color: $primary-colour;
+            }
+        }
+        &--solid-secondary{
+            background-color: $secondary-colour;
+            border-color: $secondary-colour;
+            color: #fff;
+
+            &:hover{
+                background:none;
+                color: $secondary-colour;
+            }
+        }
+        &--solid-white{
+            background-color: #fff;
+            color: $dark;
+
+            &:hover{
+                background:none;
+                border-colour: #fff;
+                color: #fff;
+            }
+        }
+
+
+        /*
+        * Ghost buttons
+        */
+        &--ghost-primary{
+            border-color: $primary-colour;
+            color: $primary-colour;
+
+            &:hover{
+                background-color: $primary-colour;
+                color: #fff;
+            }
+        }
+        &--ghost-secondary{
+            border-color: $secondary-colour;
+            color: $secondary-colour;
+
+            &:hover{
+                background-color: $secondary-colour;
+                color: #fff;
+            }
+        }
+        &--ghost-white{
+            border-color: #fff;
+            color: #fff;
+
+            &:hover{
+                background-color: #fff;
+                color: $dark;
+            }
+        }
+    }
+} //endif
