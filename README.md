@@ -1,2 +1,2 @@
 # Cryst4l-Sass-Starter
-quick Sass base - WIP
+Quick Sass base - constant WIP
