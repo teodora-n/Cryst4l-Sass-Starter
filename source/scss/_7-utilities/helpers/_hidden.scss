@@ -40,8 +40,8 @@
         .#{$class}\@xt-down { display:none; }
     }
 }
-.hidden{
+.u-hidden{
     display: none;
 }
-@include generate-hidden-up(hidden);
-@include generate-hidden-down(hidden);
+@include generate-hidden-up(u-hidden);
+@include generate-hidden-down(u-hidden);
