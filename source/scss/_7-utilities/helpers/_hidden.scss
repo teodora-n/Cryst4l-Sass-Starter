@@ -1,0 +1,47 @@
+/*-- 7. Utilities >> Helpers >> Hidden
+========================================================================== --*/
+@mixin generate-hidden-up($class) {
+    @include lg-up() {
+        .#{$class}\@lg-up { display:none; }
+    }
+    @include md-up() {
+        .#{$class}\@md-up { display:none; }
+    }
+    @include sl-up() {
+        .#{$class}\@sl-up { display:none; }
+    }
+    @include sm-up() {
+        .#{$class}\@sm-up { display:none; }
+    }
+    @include xs-up() {
+        .#{$class}\@xs-up { display:none; }
+    }
+    @include xt-up() {
+        .#{$class}\@xt-up { display:none; }
+    }
+}
+@mixin generate-hidden-down($class) {
+    @include lg-down() {
+        .#{$class}\@lg-down { display:none; }
+    }
+    @include md-down() {
+        .#{$class}\@md-down { display:none; }
+    }
+    @include sl-down() {
+        .#{$class}\@sl-down { display:none; }
+    }
+    @include sm-down() {
+        .#{$class}\@sm-down { display:none; }
+    }
+    @include xs-down() {
+        .#{$class}\@xs-down { display:none; }
+    }
+    @include xt-down() {
+        .#{$class}\@xt-down { display:none; }
+    }
+}
+.hidden{
+    display: none;
+}
+@include generate-hidden-up(hidden);
+@include generate-hidden-down(hidden);
